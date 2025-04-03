@@ -1,11 +1,18 @@
-import BotaoChat from "@/components/chat/BotaoChat";
+import Curriculo from "@/components/curriculo";
 import Principal from "@/components/landing/Principal";
-import Cabecalho from "@/components/shared/Cabecalho";
+import Container from "@/components/shared/Container";
+import { obterTecnologias } from "@/functions/tecnologias";
 
-export default function Home() {
+export default async function Home() {
+
+  const tecnologias = await obterTecnologias();
+
   return (
     <div>
-      <Principal />
+      <Principal tecnologias={tecnologias.destaques} />
+      <Container className="py-16">
+        <Curriculo tecnologias={tecnologias.todas} />
+      </Container>
     </div>
   );
 }
