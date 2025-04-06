@@ -2,7 +2,7 @@ import { Projeto, Tipo } from '@core';
 import { httpGet } from './api';
 
 export async function obterProjetos() {
-	const projetos: Projeto[] = await httpGet('/projetos');
+	const projetos: Projeto[] = await httpGet('/projeto');
 
 	return {
 		todos: projetos,
@@ -12,10 +12,10 @@ export async function obterProjetos() {
 		get web() {
 			return projetos.filter((projeto) => projeto.tipo === Tipo.WEB);
 		},
-		get jogo() {
+		get jogos() {
 			return projetos.filter((projeto) => projeto.tipo === Tipo.JOGO);
 		},
-		get deatque() {
+		get destaques() {
 			return projetos.filter((projeto) => projeto.destaque === true);
 		},
 	};
