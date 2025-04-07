@@ -1,7 +1,7 @@
 import { Projeto, Tipo } from '@core';
 import { httpGet } from './api';
 
-export async function obterProjetos() {
+export async function obterProjetos(id: number) {
 	const projetos: Projeto[] = await httpGet('/projeto');
 
 	return {
