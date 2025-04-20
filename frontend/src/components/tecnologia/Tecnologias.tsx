@@ -6,6 +6,8 @@ export interface TecnologiasProps {
 }
 
 export default function Tecnologias(props: TecnologiasProps) {
+  console.log("Tecnologia", props.lista);
+
 return props.lista ? (
   <div className="flex justify-center gap-4 flex-wrap w-4/5">
     {props.lista.map((tecnologia) => (

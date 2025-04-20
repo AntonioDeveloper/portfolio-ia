@@ -1,7 +1,8 @@
-POST https://antoniojr40.app.n8n.cloud/webhook-test/assistente-portfolio
+
+//WORKFLOW COMPLETO
+POST https://eoayryom4bpsvmo.m.pipedream.net
 Content-Type: application/json
 
 {
-  "chatId": "1",
-  "message": "Você trabalha com mobile também?"
+  "message": "Sabe me dizer se o Antonio mexe com Angular?"
 }
