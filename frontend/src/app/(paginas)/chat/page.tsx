@@ -12,7 +12,7 @@ export default function Chat() {
     <div className="text-white h-screen">
       <h1>Chat</h1>
       <h2>Chat ID: {chatId}</h2>
-      {/* 
+      
       <button onClick={limparMensagens}>Limpar</button>
 
       <ul>
@@ -37,7 +37,7 @@ export default function Chat() {
             setTexto("");
           }
         }}
-      /> */}
+      />
     </div>
   )
 }
