@@ -1,8 +1,7 @@
-
-//WORKFLOW COMPLETO
-POST https://eoayryom4bpsvmo.m.pipedream.net
+POST http://3.138.235.98:5678/webhook-test/assistente-pessoal
 Content-Type: application/json
 
 {
-  "message": "Sabe me dizer se o Antonio mexe com Angular?"
+  "sessionId": "1",
+  "message": "Me fale ao menos 3 projetos games."
 }
