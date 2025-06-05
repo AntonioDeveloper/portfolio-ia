@@ -1,7 +1,7 @@
-POST http://3.138.235.98:5678/webhook-test/assistente-pessoal
+POST http://localhost:5678/webhook-test/cdb6d095-fd2d-40ef-826b-1eec3f408662
 Content-Type: application/json
 
 {
   "sessionId": "1",
-  "message": "Me fale ao menos 3 projetos games."
+  "message": "Por favor, você trabalha com IA?"
 }

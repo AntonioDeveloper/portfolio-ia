@@ -1,6 +1,7 @@
 "use client"
 
 import useChat from "@/components/hooks/useChat"
+import ConteudoMD from "@/components/shared/ConteudoMD";
 import { useState } from "react";
 
 export default function Chat() {
@@ -12,14 +13,14 @@ export default function Chat() {
     <div className="text-white h-screen">
       <h1>Chat</h1>
       <h2>Chat ID: {chatId}</h2>
-      
+
       <button onClick={limparMensagens}>Limpar</button>
 
       <ul>
         {mensagens.map((mensagem) => (
-          <li key={mensagem.id} className="flex gap-2">
-            <div>{mensagem.autor}: </div>
-            <div>{mensagem.texto}</div>
+          <li key={mensagem.id} className="flex flex-col gap-2">
+            <div>{mensagem.autor}</div>
+            <ConteudoMD markdown={mensagem.texto} />
           </li>
         ))}
       </ul>

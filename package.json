@@ -19,5 +19,8 @@
   "homepage": "https://github.com/AntonioDeveloper/portfolio-ia#readme",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16"
+  },
+  "dependencies": {
+    "@tabler/icons-react": "^3.34.0"
   }
 }
