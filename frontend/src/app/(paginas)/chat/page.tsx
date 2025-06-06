@@ -24,7 +24,7 @@ export default function Chat() {
           </li>
         ))}
       </ul>
-
+        
       <input
         type="text"
         value={texto}
