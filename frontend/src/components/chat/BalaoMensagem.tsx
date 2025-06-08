@@ -16,7 +16,7 @@ export default function BalaoMensagem(props: BalaoMensagemProps) {
 
 function BalaoEsquerdo(props: BalaoMensagemProps) {
   return (
-    <div className="flex gap-4">
+  <div className="flex gap-4">
       <IconMessageChatbot stroke={2} />
       <div className="flex flex-col">
         <span className="text-xs text-zinc-600">{props.mensagem.autor}</span>

@@ -8,9 +8,8 @@ export default function Menu() {
 
   return (
     <nav className="flex gap-6">
-      <MenuItem href="/" selecionado={caminho === "/"}>Início</MenuItem>
-      <MenuItem href="/projeto/1" selecionado={caminho.startsWith("/projeto")}>Projetos</MenuItem>
-      <MenuItem href="/contato" selecionado={false} novaAba={true}>Contato</MenuItem>
+      <MenuItem href="/" selecionado={caminho === "/"}>Início</MenuItem>      
+      {/* <MenuItem href="/contato" selecionado={false} novaAba={true}>Contato</MenuItem> */}
     </nav>
   )
 }

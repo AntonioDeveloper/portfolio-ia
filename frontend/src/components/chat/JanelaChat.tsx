@@ -4,6 +4,7 @@ import { IconMessage, IconReload, IconSend } from "@tabler/icons-react";
 import useChat from "../hooks/useChat";
 import { useEffect, useRef, useState } from "react";
 import BalaoMensagem from "./BalaoMensagem";
+import Image from "next/image";
 
 export default function JanelaChat() {
 
@@ -46,7 +47,7 @@ export default function JanelaChat() {
             return <BalaoMensagem key={mensagem.id} mensagem={mensagem} />
           })}
           {pensando && (
-            <div className="spinner-border"></div>
+            <Image src="/pensando.gif" alt="Pensando" width={50} height={50} />
           )}
           <div ref={fimChatRef}></div>
         </div>
